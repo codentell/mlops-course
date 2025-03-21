@@ -1,3 +1,12 @@
+mlruns
+save_data
+mlflow.db
+models/*
+models
+images
+processed_data
+datasets_LogisticRegression_500features.pkl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
