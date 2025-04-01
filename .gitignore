@@ -7,6 +7,9 @@ images
 processed_data
 datasets_LogisticRegression_500features.pkl
 .DS_Store
+data/adult.data
+data/adult.names
+data/adult.test
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
