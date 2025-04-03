@@ -1,0 +1,13 @@
+stages:
+  prepare:
+    cmd: python src/preprocessing.py
+    deps:
+      - data/train.csv
+      - data/test.csv
+      - src/preprocessing.py
+    outs:
+      - data/train_new.csv
+      - data/test_new.csv
+      - data/tfidf_vectorizer.joblib
+      - data/train_data.pkl
+      - data/test_data.pkl

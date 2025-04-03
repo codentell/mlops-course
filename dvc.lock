@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: data/test.csv
+      hash: md5
+      md5: 07bd0dffc8746d3d76ad9491302c3485
+      size: 174340373
+    - path: data/train.csv
+      hash: md5
+      md5: 747929bad42877274774a99b8ca04081
+      size: 1569840834
+    - path: src/preprocessing.py
+      hash: md5
+      md5: d0301a47ac06e5d30f9f0fc35a0b4aae
+      size: 1899
+    outs:
+    - path: data/test_data.pkl
+      hash: md5
+      md5: 1ef79765882be8e8d8fb3251a48a44bc
+      size: 150983890
+    - path: data/test_new.csv
+      hash: md5
+      md5: 95fe36300fffbf239915eca8504ffeef
+      size: 995876360
+    - path: data/tfidf_vectorizer.joblib
+      hash: md5
+      md5: d29b379bb60ef77e3d2d44c46aeca02a
+      size: 18361
+    - path: data/train_data.pkl
+      hash: md5
+      md5: fb9f6598fcca536b8994e3617eadb916
+      size: 1087643203
+    - path: data/train_new.csv
+      hash: md5
+      md5: 33550d66536bb019bbcc92e4e48b1579
+      size: 7171049179
