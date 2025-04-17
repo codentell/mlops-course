@@ -10,6 +10,7 @@ datasets_LogisticRegression_500features.pkl
 data/adult.data
 data/adult.names
 data/adult.test
+.metaflow
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
