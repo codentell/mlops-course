@@ -2,6 +2,34 @@
 kubectl edit deployment argo-server -n argo
 ```
 
+Old yaml
+```yaml
+      containers:
+      - args:
+        - server
+        - --auth-mode
+        - server
+        image: quay.io/argoproj/argocli:v3.5.4
+        imagePullPolicy: Always
+        name: argo-server
+        ports:
+        - containerPort: 2746
+          name: web
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /
+            port: 2746
+            scheme: HTTPS
+          initialDelaySeconds: 10
+          periodSeconds: 20
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources: {}
+```
+
+
 ```yaml
       containers:
       - args:
